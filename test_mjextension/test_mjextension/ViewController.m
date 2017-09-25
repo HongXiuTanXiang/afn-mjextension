@@ -26,6 +26,10 @@
 
 @implementation ViewController
 
+void newfunc(){
+    
+}
+
 //函数名就是函数的地址
 int funcA(int a,int b){
     
