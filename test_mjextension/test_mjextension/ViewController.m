@@ -26,6 +26,11 @@
 
 @implementation ViewController
 
+//develops上开发人员在开发
+-(void)developNew{
+    
+}
+
 //函数名就是函数的地址
 int funcA(int a,int b){
     
