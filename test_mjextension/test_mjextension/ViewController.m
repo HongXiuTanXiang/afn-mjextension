@@ -26,8 +26,27 @@
 
 @implementation ViewController
 
+//函数名就是函数的地址
+int funcA(int a,int b){
+    
+    return a + b;
+}
+
+void funcB(int (*test)(int,int)){
+    
+    int a = 4,b = 5;
+    int c = test(a,b);
+    NSLog(@"%d",c);
+}
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //函数指针作为函数参数,直接传函数名字就可以了
+    funcB(funcA);
+    
+    NSLog(@"aaa");
     
     AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
     [sessionManager GET:@"http://jsonplaceholder.typicode.com/posts/1" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
