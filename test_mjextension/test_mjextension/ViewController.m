@@ -26,8 +26,14 @@
 
 @implementation ViewController
 
+//newfeature
 void newfunc(){
     
+}
+
+//develops上开发人员在开发
+-(void)developNew{
+
 }
 
 //函数名就是函数的地址
